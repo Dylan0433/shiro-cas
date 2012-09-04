@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<!DOCTYPE taglib   
+  PUBLIC "-//Sun Microsystems, Inc.//DTD JSP Tag Library 1.1//EN"   
+  "http://java.sun.com/j2ee/dtds/web-jsptaglib_1_1.dtd">  
+  
+<taglib>  
+    <tlibversion>1.0</tlibversion>  
+    <jspversion>1.1</jspversion>  
+    <shortname>papes</shortname>  
+    <!--====================pager:pagebar=====================-->  
+    <tag>  
+        <name>page</name>  
+        <tagclass>com.youboy.vs.interfaces.util.PageTag</tagclass>  
+        <bodycontent>JSP</bodycontent>  
+        <info>page tag provide the frame of the page divider</info>  
+        <attribute>  
+            <name>curpage</name>  
+            <required>true</required>  
+            <rtexprvalue>true</rtexprvalue>  
+        </attribute>
+        <attribute>  
+            <name>pages</name>  
+            <required>true</required>  
+            <rtexprvalue>true</rtexprvalue>  
+        </attribute>   
+        <attribute>  
+            <name>urlstart</name>  
+            <required>true</required>  
+            <rtexprvalue>true</rtexprvalue>  
+        </attribute>  
+        <attribute>  
+            <name>urlend</name>  
+            <required>true</required>  
+            <rtexprvalue>true</rtexprvalue>  
+        </attribute>  
+        <attribute>  
+            <name>css</name>  
+            <required>false</required>  
+            <rtexprvalue>false</rtexprvalue>  
+        </attribute>  
+    </tag>  
+</taglib>  

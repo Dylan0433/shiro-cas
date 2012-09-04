@@ -1,0 +1,71 @@
+@charset "utf-8";
+/* CSS Document */
+html, body, div, span, 
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, 
+a, abbr, acronym, address, big, cite, code, 
+img, ins, kbd, q, s, samp, 
+small, strike, strong, 
+dl, dt, dd, ol, ul, li, 
+fieldset, form, label, legend, 
+table, caption, tbody, tfoot, thead, tr, th, td { 
+margin: 0; 
+padding: 0; 
+border: 0; 
+outline: 0; 
+font-size: 100%; 
+vertical-align: baselinebaseline; 
+background: transparent; 
+} 
+body { 
+font-size:12px;
+line-height: 1; 
+background:#fff;
+text-align:center;
+font:normal normal normal 12px/1.5 Helvetica,Arial,Verdana,sans-serif;
+font-family:"微软雅黑";
+} 
+ol, ul { 
+list-style: none; 
+} 
+blockquote, q { 
+quotes: none; 
+} 
+blockquote:before, blockquote:after, 
+q:before, q:after { 
+content: ''; 
+content: none; 
+} 
+
+table { 
+border-collapse:collapse; 
+border-spacing: 0; 
+}
+a{ text-decoration:none;}
+
+.clear{clear:both;}
+.wrap{width:780px;margin:0 auto;text-align:left;}
+.count_tit{width:100%;margin:30px 0 10px 0;font-size:14px;}
+.tit_left a{margin:0 5px;font-size:13px;}
+.tit_left{float:left;}
+.tit_right{float:right}
+.tit_right strong em{font-style:normal;color:#f03;}
+#graph{margin:20px auto;width:623px;}
+.list{border-top:1px solid #ccc;margin:0 0 50px 0;}
+
+.site,.site_ip{float:left;margin:0;display:inline-block;height:25px;line-height:25px;overflow:hidden;border-left:1px solid #ccc;border-bottom:1px solid #ccc;}
+.site{width:255px;padding:0 0 0 5px;}
+.site_ip{width:127px;text-align:center;vertical-align:bottom;}
+.site_border{border-right:1px solid #ccc;}
+
+
+
+.com_page{ width:100%; text-align:right; margin:20px 0 20px 0;}
+.count em{font-style:normal; color:#F36;}
+.count,.next{line-height:24px;margin:0 5px;}
+.next a{padding:2px 4px;border:1px solid #2B66A5;color:#2B66A5; margin:0 5px;}
+.next span{padding:2px 4px ;font-weight:bold; margin:0 5px;}
+
+
+
+
+

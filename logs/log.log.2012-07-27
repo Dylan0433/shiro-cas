@@ -1,0 +1,2107 @@
+2012-07-27 17:15:22 org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:273) 
+ INFO Root WebApplicationContext: initialization started
+
+   2012-07-27 17:15:22 org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:495) 
+ INFO Refreshing Root WebApplicationContext: startup date [Fri Jul 27 17:15:22 CST 2012]; root of context hierarchy
+
+   2012-07-27 17:15:22 org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:315) 
+ INFO Loading XML bean definitions from class path resource [META-INF/application-root.xml]
+
+   2012-07-27 17:15:22 org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:315) 
+ INFO Loading XML bean definitions from class path resource [META-INF/shiro/application-shiro.xml]
+
+   2012-07-27 17:15:22 org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:315) 
+ INFO Loading XML bean definitions from class path resource [META-INF/mongodb/application-mongodb.xml]
+
+   2012-07-27 17:15:23 org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:315) 
+ INFO Loading XML bean definitions from class path resource [META-INF/quartz/quartz.xml]
+
+   2012-07-27 17:15:23 org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:177) 
+ INFO Loading properties file from URL [file:/D:/project/company/visitors-statistics/target/classes/application.properties]
+
+   2012-07-27 17:15:23 org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:177) 
+ INFO Loading properties file from URL [file:/D:/project/company/visitors-statistics/target/classes/META-INF/mongodb/mongodb.properties]
+
+   2012-07-27 17:15:23 org.springframework.context.support.AbstractApplicationContext$BeanPostProcessorChecker.postProcessAfterInitialization(AbstractApplicationContext.java:1350) 
+ INFO Bean 'myRealm' of type [class com.youboy.vs.infrastructure.shiro.MongoShiroRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+   2012-07-27 17:15:23 org.springframework.context.support.AbstractApplicationContext$BeanPostProcessorChecker.postProcessAfterInitialization(AbstractApplicationContext.java:1350) 
+ INFO Bean 'securityManager' of type [class org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+   2012-07-27 17:15:23 org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:557) 
+ INFO Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@e8f27e: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,springBeanHolder,executorsSingleton,parametersTempServiceImpl,purchaseTempServiceImpl,supplyTempServiceImpl,authorityServiceImpl,indexedDetailsServiceImpl,roleServiceImpl,userServiceImpl,ip2cityServiceImpl,ipServiceImpl,parametersServiceImpl,purchaseServiceImpl,statisticsServiceImpl,supplyServiceImpl,visitDetailsServiceImpl,mongoParamtersTempRepository,mongoPurchaseTempRepository,mongoSupplyTempRepository,mongoAuthorityRepository,mongoIndexedDetailsRepository,mongoRoleRepository,mongoUserRepository,mongoIp2CityRepository,mongoIpRepository,mongoParamtersRepository,mongoPurchaseRepository,statisticsRepository,mongoSupplyRepository,visitDetailsRepository,initFirstDayRepository,updateVisitorsDetailRepository,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.aop.config.internalAutoProxyCreator,shiroFilter,myRealm,securityManager,lifecycleBeanPostProcessor,org.springframework.beans.factory.config.MethodInvokingFactoryBean#0,org.springframework.beans.factory.config.CustomEditorConfigurer#0,org.springframework.beans.factory.config.CustomEditorConfigurer#1,mongo,org.springframework.beans.factory.config.CustomEditorConfigurer#2,mongoDbFactory,mongoTemplate,mappingContext,indexCreationHelper,mappingConverter,visitorsTask,detailTask,parametersTask,supplyTask,purchaseTask,parametersTempTask,supplyTempTask,purchaseTempTask,visitorsTaskJob,detailTaskJob,parametersJob,supplyJob,purchaseJob,parametersTempJob,supplyTempJob,purchaseTempJob,visitorsTrigger,detailTrigger,parameterTrigger,supplyTrigger,purchaseTrigger,parameterTempTrigger,supplyTempTrigger,purchaseTempTrigger,org.springframework.scheduling.quartz.SchedulerFactoryBean#0,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy
+
+   2012-07-27 17:15:30 org.quartz.core.QuartzScheduler.<init>(QuartzScheduler.java:195) 
+ INFO Quartz Scheduler v.1.5.2 created.
+
+   2012-07-27 17:15:30 org.quartz.simpl.RAMJobStore.initialize(RAMJobStore.java:138) 
+ INFO RAMJobStore initialized.
+
+   2012-07-27 17:15:30 org.quartz.impl.StdSchedulerFactory.instantiate(StdSchedulerFactory.java:1014) 
+ INFO Quartz scheduler 'org.springframework.scheduling.quartz.SchedulerFactoryBean#0' initialized from an externally provided properties instance.
+
+   2012-07-27 17:15:30 org.quartz.impl.StdSchedulerFactory.instantiate(StdSchedulerFactory.java:1018) 
+ INFO Quartz scheduler version: 1.5.2
+
+   2012-07-27 17:15:30 org.quartz.core.QuartzScheduler.setJobFactory(QuartzScheduler.java:1853) 
+ INFO JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@602f892f
+
+   2012-07-27 17:15:30 org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:334) 
+ INFO Starting beans in phase 2147483647
+
+   2012-07-27 17:15:30 org.springframework.scheduling.quartz.SchedulerFactoryBean.startScheduler(SchedulerFactoryBean.java:648) 
+ INFO Starting Quartz Scheduler now
+
+   2012-07-27 17:15:30 org.quartz.core.QuartzScheduler.start(QuartzScheduler.java:400) 
+ INFO Scheduler org.springframework.scheduling.quartz.SchedulerFactoryBean#0_$_NON_CLUSTERED started.
+
+   2012-07-27 17:15:30 org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:302) 
+ INFO Root WebApplicationContext: initialization completed in 8116 ms
+
+   2012-07-27 17:15:30 org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:444) 
+ INFO FrameworkServlet 'appServlet': initialization started
+
+   2012-07-27 17:15:30 org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:495) 
+ INFO Refreshing WebApplicationContext for namespace 'appServlet-servlet': startup date [Fri Jul 27 17:15:30 CST 2012]; parent: Root WebApplicationContext
+
+   2012-07-27 17:15:30 org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:315) 
+ INFO Loading XML bean definitions from ServletContext resource [/WEB-INF/spring/appServlet/servlet-context.xml]
+
+   2012-07-27 17:15:30 org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:557) 
+ INFO Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@7e5284e9: defining beans [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0,org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0,org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0,org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping,org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter,org.springframework.context.annotation.internalAsyncAnnotationProcessor,org.springframework.context.annotation.internalScheduledAnnotationProcessor,org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0,viewResolver,multipartResolver,adminController,captchaController,securityAuthorityController,securityRoleController,securityUserController,indexedDetailsController,initFirstDayController,initFirstDayRepository,updateVisitorsDetailController,updateVisitorsDetailRepository,ip2CityController,testController,visitDetailsController,visitorsStatisticsController,visitorsStatisticsParametersController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@e8f27e
+
+   2012-07-27 17:15:30 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/admin/head],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.admin.AdminController.head()
+
+   2012-07-27 17:15:30 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/admin/left],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.admin.AdminController.left()
+
+   2012-07-27 17:15:30 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/admin/right],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.admin.AdminController.right(org.springframework.ui.Model)
+
+   2012-07-27 17:15:30 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/admin/index],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.admin.AdminController.index()
+
+   2012-07-27 17:15:30 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/admin/logout],methods=[GET || POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.admin.AdminController.logout()
+
+   2012-07-27 17:15:30 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/ || /login],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.admin.AdminController.login()
+
+   2012-07-27 17:15:30 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/login],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.admin.AdminController.login(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpSession)
+
+   2012-07-27 17:15:30 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/admin/deny],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.admin.AdminController.deny()
+
+   2012-07-27 17:15:30 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/admin/foot],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.admin.AdminController.foot()
+
+   2012-07-27 17:15:30 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/admin/sys],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.admin.AdminController.sys()
+
+   2012-07-27 17:15:30 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/admin/visitor],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.admin.AdminController.hummerApi()
+
+   2012-07-27 17:15:30 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/captcha],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void com.youboy.vs.interfaces.admin.CaptchaController.captcha(javax.servlet.http.HttpSession,java.io.OutputStream)
+
+   2012-07-27 17:15:30 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/security/authority/list],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.admin.SecurityAuthorityController.list(com.youboy.core.orm.Page<com.youboy.vs.domain.user.Authority>,org.springframework.ui.Model)
+
+   2012-07-27 17:15:30 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/security/authority/{id}/delete],methods=[DELETE],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.admin.SecurityAuthorityController.delete(java.lang.String)
+
+   2012-07-27 17:15:30 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/security/authority/delete],methods=[DELETE],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.admin.SecurityAuthorityController.delete(javax.servlet.http.HttpServletRequest)
+
+   2012-07-27 17:15:30 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/security/authority/create],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.admin.SecurityAuthorityController.create(com.youboy.vs.domain.user.Authority)
+
+   2012-07-27 17:15:30 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/security/authority/create],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.admin.SecurityAuthorityController.create(org.springframework.ui.Model)
+
+   2012-07-27 17:15:30 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/security/authority/check],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.admin.SecurityAuthorityController.checkUser(java.lang.String) throws java.io.IOException
+
+   2012-07-27 17:15:30 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/security/authority/{id}/edit],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.admin.SecurityAuthorityController.edit(java.lang.String,org.springframework.ui.Model)
+
+   2012-07-27 17:15:30 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/security/authority/{id}/edit],methods=[PUT],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.admin.SecurityAuthorityController.edit(com.youboy.vs.domain.user.Authority,javax.servlet.http.HttpServletRequest)
+
+   2012-07-27 17:15:30 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/security/role/list],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.admin.SecurityRoleController.list(com.youboy.core.orm.Page<com.youboy.vs.domain.user.Role>,org.springframework.ui.Model)
+
+   2012-07-27 17:15:30 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/security/role/{id}/delete],methods=[DELETE],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.admin.SecurityRoleController.delete(java.lang.String)
+
+   2012-07-27 17:15:30 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/security/role/delete],methods=[DELETE],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.admin.SecurityRoleController.delete(javax.servlet.http.HttpServletRequest)
+
+   2012-07-27 17:15:30 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/security/role/create],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.admin.SecurityRoleController.create(com.youboy.vs.domain.user.Role,javax.servlet.http.HttpServletRequest)
+
+   2012-07-27 17:15:31 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/security/role/create],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.admin.SecurityRoleController.create(org.springframework.ui.Model)
+
+   2012-07-27 17:15:31 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/security/role/check],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.admin.SecurityRoleController.checkUser(java.lang.String) throws java.io.IOException
+
+   2012-07-27 17:15:31 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/security/role/{id}/edit],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.admin.SecurityRoleController.edit(java.lang.String,org.springframework.ui.Model)
+
+   2012-07-27 17:15:31 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/security/role/{id}/edit],methods=[PUT],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.admin.SecurityRoleController.edit(com.youboy.vs.domain.user.Role,javax.servlet.http.HttpServletRequest)
+
+   2012-07-27 17:15:31 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/security/user/list],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.admin.SecurityUserController.list(com.youboy.core.orm.Page<com.youboy.vs.domain.user.User>,org.springframework.ui.Model)
+
+   2012-07-27 17:15:31 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/security/user/{id}/delete],methods=[DELETE],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.admin.SecurityUserController.delete(java.lang.String)
+
+   2012-07-27 17:15:31 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/security/user/delete],methods=[DELETE],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.admin.SecurityUserController.delete(javax.servlet.http.HttpServletRequest)
+
+   2012-07-27 17:15:31 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/security/user/create],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.admin.SecurityUserController.create(com.youboy.vs.domain.user.User,javax.servlet.http.HttpServletRequest)
+
+   2012-07-27 17:15:31 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/security/user/create],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.admin.SecurityUserController.create(org.springframework.ui.Model)
+
+   2012-07-27 17:15:31 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/security/user/check],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.admin.SecurityUserController.checkUser(java.lang.String) throws java.io.IOException
+
+   2012-07-27 17:15:31 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/security/user/{id}/edit],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.admin.SecurityUserController.edit(java.lang.String,org.springframework.ui.Model)
+
+   2012-07-27 17:15:31 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/security/user/{id}/edit],methods=[PUT],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.admin.SecurityUserController.edit(com.youboy.vs.domain.user.User,javax.servlet.http.HttpServletRequest)
+
+   2012-07-27 17:15:31 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/indexed/{name}/list],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void com.youboy.vs.interfaces.IndexedDetailsController.list(com.youboy.core.orm.Page<com.youboy.vs.domain.user.IndexedDetails>,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,org.springframework.ui.Model)
+
+   2012-07-27 17:15:31 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/indexed/index],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.IndexedDetailsController.indexed(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)
+
+   2012-07-27 17:15:31 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/indexed/{name}/pagecount],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void com.youboy.vs.interfaces.IndexedDetailsController.getPageNoCount(java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,org.springframework.ui.Model)
+
+   2012-07-27 17:15:31 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/init-first-day/init],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.init.InitFirstDayController.initFirstDay()
+
+   2012-07-27 17:15:31 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/update-visitors/update],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.init.UpdateVisitorsDetailController.initFirstDay()
+
+   2012-07-27 17:15:31 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/ip-2-city],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.Ip2CityController.init()
+
+   2012-07-27 17:15:31 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/visitors/test],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.TestController.text(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)
+
+   2012-07-27 17:15:31 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/visitors/source],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.TestController.source(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)
+
+   2012-07-27 17:15:31 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/visitors/add-role],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.TestController.addRole()
+
+   2012-07-27 17:15:31 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/visitors/response],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.TestController.response(javax.servlet.http.HttpServletResponse) throws java.io.IOException
+
+   2012-07-27 17:15:31 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/visitors/get-data],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.List<com.youboy.vs.domain.visitors.Parameters> com.youboy.vs.interfaces.TestController.sendData(javax.servlet.http.HttpServletResponse)
+
+   2012-07-27 17:15:31 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/visitors/add-user],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.TestController.addUserTest()
+
+   2012-07-27 17:15:31 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/visitors/add-authority],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.TestController.Authority()
+
+   2012-07-27 17:15:31 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/visitors/sendRequest],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.TestController.sendRequest(javax.servlet.http.HttpServletResponse)
+
+   2012-07-27 17:15:31 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/visitdetails/add],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void com.youboy.vs.interfaces.VisitDetailsController.add(java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)
+
+   2012-07-27 17:15:31 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/visitdetails/list],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.VisitDetailsController.list(com.youboy.core.orm.Page<com.youboy.vs.domain.visitors.VisitDetails>,org.springframework.ui.Model)
+
+   2012-07-27 17:15:31 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/visitdetails/{name}/list],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void com.youboy.vs.interfaces.VisitDetailsController.list(com.youboy.core.orm.Page<com.youboy.vs.domain.visitors.VisitDetails>,java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse,org.springframework.ui.Model)
+
+   2012-07-27 17:15:31 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/visitdetails/delete],methods=[DELETE],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.VisitDetailsController.delete(javax.servlet.http.HttpServletRequest)
+
+   2012-07-27 17:15:31 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/visitdetails/{id}/delete],methods=[DELETE],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.VisitDetailsController.delete(java.lang.String)
+
+   2012-07-27 17:15:31 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/visitdetails/create],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.VisitDetailsController.create(org.springframework.ui.Model)
+
+   2012-07-27 17:15:31 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/visitdetails/create],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.VisitDetailsController.create(com.youboy.vs.domain.visitors.VisitDetails,org.springframework.validation.BindingResult)
+
+   2012-07-27 17:15:31 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/visitdetails/{id}/edit],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.VisitDetailsController.edit(java.lang.String,javax.servlet.http.HttpServletRequest)
+
+   2012-07-27 17:15:31 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/visitdetails/{id}/edit],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.VisitDetailsController.edit(java.lang.String,org.springframework.ui.Model)
+
+   2012-07-27 17:15:31 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/visitdetails/{name}/busines-list],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void com.youboy.vs.interfaces.VisitDetailsController.listVisitBusinessmen(com.youboy.core.orm.Page<com.youboy.vs.domain.visitors.VisitDetails>,java.lang.String,int,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,org.springframework.ui.Model)
+
+   2012-07-27 17:15:31 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/visitors/list],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.VisitorsStatisticsController.list(com.youboy.core.orm.Page<com.youboy.vs.domain.visitors.StatisticsData>,org.springframework.ui.Model)
+
+   2012-07-27 17:15:31 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/visitors/{name}/delete],methods=[DELETE],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.VisitorsStatisticsController.delete(java.lang.String)
+
+   2012-07-27 17:15:31 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/visitors/delete],methods=[DELETE],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.VisitorsStatisticsController.delete(javax.servlet.http.HttpServletRequest)
+
+   2012-07-27 17:15:31 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/visitors/create],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.VisitorsStatisticsController.create(org.springframework.ui.Model)
+
+   2012-07-27 17:15:31 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/visitors/create],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.VisitorsStatisticsController.create(com.youboy.vs.domain.visitors.StatisticsData,org.springframework.validation.BindingResult)
+
+   2012-07-27 17:15:31 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/visitors/show],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.VisitorsStatisticsController.index(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)
+
+   2012-07-27 17:15:31 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/visitors/visit],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.VisitorsStatisticsController.visit(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)
+
+   2012-07-27 17:15:31 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/visitors/{name}/edit],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.VisitorsStatisticsController.edit(java.lang.String,org.springframework.ui.Model)
+
+   2012-07-27 17:15:31 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/visitors/{name}/edit],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.VisitorsStatisticsController.edit(java.lang.String,javax.servlet.http.HttpServletRequest)
+
+   2012-07-27 17:15:31 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/visitors/getData/{userName}],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.VisitorsStatisticsController.visitorsStatistics(java.lang.String,int,java.lang.String)
+
+   2012-07-27 17:15:31 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/parameters/delete],methods=[DELETE],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.VisitorsStatisticsParametersController.delete(javax.servlet.http.HttpServletRequest)
+
+   2012-07-27 17:15:31 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/parameters/{userName}/delete],methods=[DELETE],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.VisitorsStatisticsParametersController.delete(java.lang.String)
+
+   2012-07-27 17:15:31 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/parameters/create],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.VisitorsStatisticsParametersController.create(org.springframework.ui.Model)
+
+   2012-07-27 17:15:31 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/parameters/create],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.VisitorsStatisticsParametersController.create(com.youboy.vs.domain.visitors.VisitorsStatisticsParameters,org.springframework.validation.BindingResult)
+
+   2012-07-27 17:15:31 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/parameters/{userName}/edit],methods=[PUT],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.VisitorsStatisticsParametersController.edit(java.lang.String,javax.servlet.http.HttpServletRequest)
+
+   2012-07-27 17:15:31 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/parameters/{userName}/edit],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.VisitorsStatisticsParametersController.edit(java.lang.String,org.springframework.ui.Model)
+
+   2012-07-27 17:15:31 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/parameters/list],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.VisitorsStatisticsParametersController.listParameters(com.youboy.core.orm.Page<com.youboy.vs.domain.visitors.VisitorsStatisticsParameters>,org.springframework.ui.Model)
+
+   2012-07-27 17:15:31 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/parameters/check],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public boolean com.youboy.vs.interfaces.VisitorsStatisticsParametersController.isNotExist(java.lang.String)
+
+   2012-07-27 17:15:31 org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:314) 
+ INFO Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+
+   2012-07-27 17:15:32 org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:463) 
+ INFO FrameworkServlet 'appServlet': initialization completed in 2124 ms
+
+   2012-07-27 17:25:39 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:25:40 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:25:42 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:25:42 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:25:42 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:25:42 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:25:44 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:25:44 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:25:44 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:25:44 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:25:44 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:25:44 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:25:44 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:25:44 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:25:44 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:25:44 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:25:44 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:25:44 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:25:56 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:25:56 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:25:57 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:25:57 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:25:57 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:25:57 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:25:58 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:25:58 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:25:59 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:25:59 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:25:59 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:25:59 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:25:59 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:25:59 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:25:59 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:25:59 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:25:59 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:25:59 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:25:59 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:25:59 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:26:00 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:26:00 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:26:00 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:26:00 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:26:00 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:26:00 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:26:04 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:26:04 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:26:04 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:26:04 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:26:04 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:26:04 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:26:04 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:26:04 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:26:04 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:26:04 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:26:04 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:26:04 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:30:03 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:30:11 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:30:11 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:30:12 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:30:17 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:30:26 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:30:40 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:30:42 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:30:42 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:30:42 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:30:42 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:30:50 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:31:04 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:31:15 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:31:15 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:31:15 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:31:17 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:31:17 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:31:17 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:31:17 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:31:17 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:31:19 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:31:19 org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1080) 
+ WARN No mapping found for HTTP request with URI [/visitors/admin/css/wm.css] in DispatcherServlet with name 'appServlet'
+
+   2012-07-27 17:31:21 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:31:21 org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1080) 
+ WARN No mapping found for HTTP request with URI [/visitors/admin/css/wm.css] in DispatcherServlet with name 'appServlet'
+
+   2012-07-27 17:31:21 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:31:21 org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1080) 
+ WARN No mapping found for HTTP request with URI [/visitors/admin/css/wm.css] in DispatcherServlet with name 'appServlet'
+
+   2012-07-27 17:31:22 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:31:22 org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1080) 
+ WARN No mapping found for HTTP request with URI [/visitors/admin/css/wm.css] in DispatcherServlet with name 'appServlet'
+
+   2012-07-27 17:31:23 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:31:23 org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1080) 
+ WARN No mapping found for HTTP request with URI [/visitors/admin/css/wm.css] in DispatcherServlet with name 'appServlet'
+
+   2012-07-27 17:31:24 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:31:24 org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1080) 
+ WARN No mapping found for HTTP request with URI [/visitors/admin/css/wm.css] in DispatcherServlet with name 'appServlet'
+
+   2012-07-27 17:31:26 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:31:26 org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1080) 
+ WARN No mapping found for HTTP request with URI [/visitors/admin/css/wm.css] in DispatcherServlet with name 'appServlet'
+
+   2012-07-27 17:31:27 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:31:27 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:31:29 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:31:29 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:31:29 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:31:31 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:31:31 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:31:31 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:31:32 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:31:32 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:31:33 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:31:33 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:31:33 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:31:34 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:31:34 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:31:37 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:31:37 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:32:04 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:32:04 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:32:06 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:32:06 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:32:06 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:32:06 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:32:06 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:32:07 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:32:07 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:32:07 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:32:07 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:32:07 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:32:08 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:32:08 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:32:08 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:32:09 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:32:09 org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1080) 
+ WARN No mapping found for HTTP request with URI [/visitors/admin/css/wm.css] in DispatcherServlet with name 'appServlet'
+
+   2012-07-27 17:32:10 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:32:41 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:32:41 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:32:41 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:32:42 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:32:42 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:32:43 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:32:43 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:32:43 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:32:44 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:32:45 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:32:45 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:32:45 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:32:45 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:32:45 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:32:45 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:32:45 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:32:45 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:32:45 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:32:46 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:32:46 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:32:46 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:32:46 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:32:46 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:32:46 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:32:46 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:32:46 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:32:46 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:33:55 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:34:32 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:39:08 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:39:08 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:39:08 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:39:09 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:39:09 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:39:09 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:39:09 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:39:09 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:39:09 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:39:09 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:39:09 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:39:09 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:39:09 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:39:09 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:39:09 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:39:09 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:39:09 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:39:09 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:39:09 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:39:10 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:39:10 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:39:10 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:39:27 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:39:37 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:39:50 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:39:50 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:39:50 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:39:50 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:39:50 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:39:57 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:40:06 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:40:08 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:40:26 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:40:26 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:40:26 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:40:26 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:40:28 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:40:30 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:40:31 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:40:31 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:40:31 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:40:31 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:40:32 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:40:34 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:40:35 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:40:35 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:40:35 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:40:35 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:40:37 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:40:39 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:40:39 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:40:39 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:40:39 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:40:39 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:40:41 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:41:08 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:41:08 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:41:59 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:41:59 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:41:59 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:41:59 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:42:01 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:42:09 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:42:12 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:42:13 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:42:13 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:42:13 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:42:13 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:42:16 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:42:29 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:42:29 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:42:29 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:42:31 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:42:31 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:42:32 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:42:32 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:42:32 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:42:49 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:42:49 org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1080) 
+ WARN No mapping found for HTTP request with URI [/visitors/admin/css/wm.css] in DispatcherServlet with name 'appServlet'
+
+   2012-07-27 17:42:50 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:42:50 org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1080) 
+ WARN No mapping found for HTTP request with URI [/visitors/admin/css/wm.css] in DispatcherServlet with name 'appServlet'
+
+   2012-07-27 17:42:51 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:42:51 org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1080) 
+ WARN No mapping found for HTTP request with URI [/visitors/admin/css/wm.css] in DispatcherServlet with name 'appServlet'
+
+   2012-07-27 17:42:52 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:42:52 org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1080) 
+ WARN No mapping found for HTTP request with URI [/visitors/admin/css/wm.css] in DispatcherServlet with name 'appServlet'
+
+   2012-07-27 17:42:52 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 17:42:52 org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1080) 
+ WARN No mapping found for HTTP request with URI [/visitors/admin/css/wm.css] in DispatcherServlet with name 'appServlet'
+
+   2012-07-27 17:42:55 org.apache.shiro.realm.AuthorizingRealm.getAuthorizationCacheLazy(AuthorizingRealm.java:248) 
+ INFO No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+
+   2012-07-27 18:00:10 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第3页共11086页
+
+   2012-07-27 18:00:11 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第2页共11086页
+
+   2012-07-27 18:00:11 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第5页共11086页
+
+   2012-07-27 18:00:11 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第1页共11086页
+
+   2012-07-27 18:00:11 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第9页共11086页
+
+   2012-07-27 18:00:11 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第6页共11086页
+
+   2012-07-27 18:00:12 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第8页共11086页
+
+   2012-07-27 18:00:12 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第10页共11086页
+
+   2012-07-27 18:00:12 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第4页共11086页
+
+   2012-07-27 18:00:12 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第7页共11086页
+
+   2012-07-27 18:00:15 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第11页共11086页
+
+   2012-07-27 18:00:16 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第12页共11086页
+
+   2012-07-27 18:00:17 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第15页共11086页
+
+   2012-07-27 18:00:17 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第13页共11086页
+
+   2012-07-27 18:00:17 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第14页共11086页
+
+   2012-07-27 18:00:17 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第16页共11086页
+
+   2012-07-27 18:00:18 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第19页共11086页
+
+   2012-07-27 18:00:18 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第17页共11086页
+
+   2012-07-27 18:00:18 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第18页共11086页
+
+   2012-07-27 18:00:19 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第20页共11086页
+
+   2012-07-27 18:00:20 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第21页共11086页
+
+   2012-07-27 18:00:22 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第22页共11086页
+
+   2012-07-27 18:00:22 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第23页共11086页
+
+   2012-07-27 18:00:22 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第24页共11086页
+
+   2012-07-27 18:00:22 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第25页共11086页
+
+   2012-07-27 18:00:23 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第26页共11086页
+
+   2012-07-27 18:00:24 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第27页共11086页
+
+   2012-07-27 18:00:24 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第28页共11086页
+
+   2012-07-27 18:00:25 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第29页共11086页
+
+   2012-07-27 18:00:25 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第30页共11086页
+
+   2012-07-27 18:00:25 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第31页共11086页
+
+   2012-07-27 18:00:28 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第32页共11086页
+
+   2012-07-27 18:00:28 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第33页共11086页
+
+   2012-07-27 18:00:28 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第34页共11086页
+
+   2012-07-27 18:00:28 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第35页共11086页
+
+   2012-07-27 18:00:28 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第36页共11086页
+
+   2012-07-27 18:00:29 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第37页共11086页
+
+   2012-07-27 18:00:30 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第38页共11086页
+
+   2012-07-27 18:00:30 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第40页共11086页
+
+   2012-07-27 18:00:30 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第39页共11086页
+
+   2012-07-27 18:00:31 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第41页共11086页
+
+   2012-07-27 18:00:34 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第42页共11086页
+
+   2012-07-27 18:00:34 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第44页共11086页
+
+   2012-07-27 18:00:34 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第45页共11086页
+
+   2012-07-27 18:00:34 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第43页共11086页
+
+   2012-07-27 18:00:34 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第46页共11086页
+
+   2012-07-27 18:00:35 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第48页共11086页
+
+   2012-07-27 18:00:35 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第50页共11086页
+
+   2012-07-27 18:00:35 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第49页共11086页
+
+   2012-07-27 18:00:37 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第51页共11086页
+
+   2012-07-27 18:00:37 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第47页共11086页
+
+   2012-07-27 18:00:40 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第52页共11086页
+
+   2012-07-27 18:00:40 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第55页共11086页
+
+   2012-07-27 18:00:40 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第54页共11086页
+
+   2012-07-27 18:00:40 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第53页共11086页
+
+   2012-07-27 18:00:40 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第56页共11086页
+
+   2012-07-27 18:00:42 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第60页共11086页
+
+   2012-07-27 18:00:42 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第61页共11086页
+
+   2012-07-27 18:00:42 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第57页共11086页
+
+   2012-07-27 18:00:43 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第58页共11086页
+
+   2012-07-27 18:00:43 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第59页共11086页
+
+   2012-07-27 18:00:46 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第62页共11086页
+
+   2012-07-27 18:00:46 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第65页共11086页
+
+   2012-07-27 18:00:46 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第63页共11086页
+
+   2012-07-27 18:00:46 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第64页共11086页
+
+   2012-07-27 18:00:46 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第66页共11086页
+
+   2012-07-27 18:00:48 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第67页共11086页
+
+   2012-07-27 18:00:48 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第68页共11086页
+
+   2012-07-27 18:00:48 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第69页共11086页
+
+   2012-07-27 18:00:49 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第70页共11086页
+
+   2012-07-27 18:00:49 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第71页共11086页
+
+   2012-07-27 18:00:52 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第72页共11086页
+
+   2012-07-27 18:00:52 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第73页共11086页
+
+   2012-07-27 18:00:52 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第74页共11086页
+
+   2012-07-27 18:00:52 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第75页共11086页
+
+   2012-07-27 18:00:52 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第76页共11086页
+
+   2012-07-27 18:00:54 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第77页共11086页
+
+   2012-07-27 18:00:54 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第78页共11086页
+
+   2012-07-27 18:00:54 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第79页共11086页
+
+   2012-07-27 18:00:54 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第80页共11086页
+
+   2012-07-27 18:00:54 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第81页共11086页
+
+   2012-07-27 18:00:58 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第82页共11086页
+
+   2012-07-27 18:00:58 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第86页共11086页
+
+   2012-07-27 18:00:58 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第84页共11086页
+
+   2012-07-27 18:00:58 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第83页共11086页
+
+   2012-07-27 18:00:58 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第85页共11086页
+
+   2012-07-27 18:01:00 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第90页共11086页
+
+   2012-07-27 18:01:00 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第91页共11086页
+
+   2012-07-27 18:01:02 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第87页共11086页
+
+   2012-07-27 18:01:02 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第88页共11086页
+
+   2012-07-27 18:01:02 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第89页共11086页
+
+   2012-07-27 18:01:04 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第92页共11086页
+
+   2012-07-27 18:01:04 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第93页共11086页
+
+   2012-07-27 18:01:04 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第94页共11086页
+
+   2012-07-27 18:01:04 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第95页共11086页
+
+   2012-07-27 18:01:05 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第96页共11086页
+
+   2012-07-27 18:01:07 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第97页共11086页
+
+   2012-07-27 18:01:07 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第98页共11086页
+
+   2012-07-27 18:01:09 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第100页共11086页
+
+   2012-07-27 18:01:09 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第99页共11086页
+
+   2012-07-27 18:01:09 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第101页共11086页
+
+   2012-07-27 18:01:10 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第102页共11086页
+
+   2012-07-27 18:01:11 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第103页共11086页
+
+   2012-07-27 18:01:11 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第104页共11086页
+
+   2012-07-27 18:01:11 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第106页共11086页
+
+   2012-07-27 18:01:11 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第105页共11086页
+
+   2012-07-27 18:01:13 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第107页共11086页
+
+   2012-07-27 18:01:13 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第108页共11086页
+
+   2012-07-27 18:01:16 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第110页共11086页
+
+   2012-07-27 18:01:16 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第109页共11086页
+
+   2012-07-27 18:01:16 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第111页共11086页
+
+   2012-07-27 18:01:17 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第112页共11086页
+
+   2012-07-27 18:01:18 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第113页共11086页
+
+   2012-07-27 18:01:18 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第115页共11086页
+
+   2012-07-27 18:01:18 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第116页共11086页
+
+   2012-07-27 18:01:19 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第117页共11086页
+
+   2012-07-27 18:01:19 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第114页共11086页
+
+   2012-07-27 18:01:19 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第118页共11086页
+
+   2012-07-27 18:01:22 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第119页共11086页
+
+   2012-07-27 18:01:22 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第120页共11086页
+
+   2012-07-27 18:01:22 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第121页共11086页
+
+   2012-07-27 18:01:23 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第122页共11086页
+
+   2012-07-27 18:01:27 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第127页共11086页
+
+   2012-07-27 18:01:27 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第126页共11086页
+
+   2012-07-27 18:01:27 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第128页共11086页
+
+   2012-07-27 18:01:29 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第123页共11086页
+
+   2012-07-27 18:01:29 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第124页共11086页
+
+   2012-07-27 18:01:29 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第125页共11086页
+
+   2012-07-27 18:01:32 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第129页共11086页
+
+   2012-07-27 18:01:32 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第130页共11086页
+
+   2012-07-27 18:01:32 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第131页共11086页
+
+   2012-07-27 18:01:33 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第132页共11086页
+
+   2012-07-27 18:01:34 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第134页共11086页
+
+   2012-07-27 18:01:34 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第133页共11086页
+
+   2012-07-27 18:01:34 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第135页共11086页
+
+   2012-07-27 18:01:36 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第136页共11086页
+
+   2012-07-27 18:01:36 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第137页共11086页
+
+   2012-07-27 18:01:36 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第138页共11086页
+
+   2012-07-27 18:01:39 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第142页共11086页
+
+   2012-07-27 18:01:39 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第141页共11086页
+
+   2012-07-27 18:01:39 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第139页共11086页
+
+   2012-07-27 18:01:39 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第140页共11086页
+
+   2012-07-27 18:01:41 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第144页共11086页
+
+   2012-07-27 18:01:41 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第143页共11086页
+
+   2012-07-27 18:01:41 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第145页共11086页
+
+   2012-07-27 18:01:43 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第146页共11086页
+
+   2012-07-27 18:01:43 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第147页共11086页
+
+   2012-07-27 18:01:43 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第148页共11086页
+
+   2012-07-27 18:01:45 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第150页共11086页
+
+   2012-07-27 18:01:45 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第151页共11086页
+
+   2012-07-27 18:01:45 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第149页共11086页
+
+   2012-07-27 18:01:45 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第152页共11086页
+
+   2012-07-27 18:01:47 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第153页共11086页
+
+   2012-07-27 18:01:47 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第154页共11086页
+
+   2012-07-27 18:01:47 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第155页共11086页
+
+   2012-07-27 18:01:49 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第156页共11086页
+
+   2012-07-27 18:01:50 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第157页共11086页
+
+   2012-07-27 18:01:50 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第158页共11086页
+
+   2012-07-27 18:01:51 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第159页共11086页
+
+   2012-07-27 18:01:52 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第162页共11086页
+
+   2012-07-27 18:01:55 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第163页共11086页
+
+   2012-07-27 18:01:55 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第160页共11086页
+
+   2012-07-27 18:01:55 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第164页共11086页
+
+   2012-07-27 18:01:55 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第165页共11086页
+
+   2012-07-27 18:01:55 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第161页共11086页
+
+   2012-07-27 18:01:56 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第168页共11086页
+
+   2012-07-27 18:01:56 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第166页共11086页
+
+   2012-07-27 18:01:56 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第167页共11086页
+
+   2012-07-27 18:01:57 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第169页共11086页
+
+   2012-07-27 18:01:58 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第170页共11086页
+
+   2012-07-27 18:02:01 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第171页共11086页
+
+   2012-07-27 18:02:01 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第174页共11086页
+
+   2012-07-27 18:02:01 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第172页共11086页
+
+   2012-07-27 18:02:01 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第173页共11086页
+
+   2012-07-27 18:02:04 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第175页共11086页
+
+   2012-07-27 18:02:04 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第179页共11086页
+
+   2012-07-27 18:02:05 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第180页共11086页
+
+   2012-07-27 18:02:06 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第176页共11086页
+
+   2012-07-27 18:02:06 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第177页共11086页
+
+   2012-07-27 18:02:06 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第178页共11086页
+
+   2012-07-27 18:02:08 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第181页共11086页
+
+   2012-07-27 18:02:08 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第182页共11086页
+
+   2012-07-27 18:02:08 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第183页共11086页
+
+   2012-07-27 18:02:08 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第184页共11086页
+
+   2012-07-27 18:02:10 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第185页共11086页
+
+   2012-07-27 18:02:10 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第186页共11086页
+
+   2012-07-27 18:02:11 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第187页共11086页
+
+   2012-07-27 18:02:11 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第188页共11086页
+
+   2012-07-27 18:02:11 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第189页共11086页
+
+   2012-07-27 18:02:11 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第190页共11086页
+
+   2012-07-27 18:02:15 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第191页共11086页
+
+   2012-07-27 18:02:15 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第193页共11086页
+
+   2012-07-27 18:02:15 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第192页共11086页
+
+   2012-07-27 18:02:15 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第194页共11086页
+
+   2012-07-27 18:02:17 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第195页共11086页
+
+   2012-07-27 18:02:18 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第197页共11086页
+
+   2012-07-27 18:02:18 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第198页共11086页
+
+   2012-07-27 18:02:18 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第199页共11086页
+
+   2012-07-27 18:02:19 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第196页共11086页
+
+   2012-07-27 18:02:21 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第200页共11086页
+
+   2012-07-27 18:02:21 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第201页共11086页
+
+   2012-07-27 18:02:21 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第202页共11086页
+
+   2012-07-27 18:02:21 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第203页共11086页
+
+   2012-07-27 18:02:21 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第204页共11086页
+
+   2012-07-27 18:02:23 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第205页共11086页
+
+   2012-07-27 18:02:24 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第206页共11086页
+
+   2012-07-27 18:02:25 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第208页共11086页
+
+   2012-07-27 18:02:25 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第207页共11086页
+
+   2012-07-27 18:02:25 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第209页共11086页
+
+   2012-07-27 18:02:27 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第210页共11086页
+
+   2012-07-27 18:02:27 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第211页共11086页
+
+   2012-07-27 18:02:27 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第212页共11086页
+
+   2012-07-27 18:02:27 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第213页共11086页
+
+   2012-07-27 18:02:29 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第215页共11086页
+
+   2012-07-27 18:02:30 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第214页共11086页
+
+   2012-07-27 18:02:31 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第216页共11086页
+
+   2012-07-27 18:02:32 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第217页共11086页
+
+   2012-07-27 18:02:32 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第218页共11086页
+
+   2012-07-27 18:02:33 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第219页共11086页
+
+   2012-07-27 18:02:33 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第220页共11086页
+
+   2012-07-27 18:02:34 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第221页共11086页
+
+   2012-07-27 18:02:34 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第222页共11086页
+
+   2012-07-27 18:02:34 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第223页共11086页
+
+   2012-07-27 18:02:35 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第224页共11086页
+
+   2012-07-27 18:02:36 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第225页共11086页
+
+   2012-07-27 18:02:37 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第226页共11086页
+
+   2012-07-27 18:02:38 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第228页共11086页
+
+   2012-07-27 18:02:38 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第227页共11086页
+
+   2012-07-27 18:02:39 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第229页共11086页
+
+   2012-07-27 18:02:39 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第230页共11086页
+
+   2012-07-27 18:02:40 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第232页共11086页
+
+   2012-07-27 18:02:40 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第231页共11086页
+
+   2012-07-27 18:02:42 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第234页共11086页
+
+   2012-07-27 18:02:43 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第233页共11086页
+
+   2012-07-27 18:02:43 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第235页共11086页
+
+   2012-07-27 18:02:44 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第236页共11086页
+
+   2012-07-27 18:02:45 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第238页共11086页
+
+   2012-07-27 18:02:45 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第237页共11086页
+
+   2012-07-27 18:02:45 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第239页共11086页
+
+   2012-07-27 18:02:46 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第240页共11086页
+
+   2012-07-27 18:02:46 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第242页共11086页
+
+   2012-07-27 18:02:46 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第241页共11086页
+
+   2012-07-27 18:02:48 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第244页共11086页
+
+   2012-07-27 18:02:48 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第243页共11086页
+
+   2012-07-27 18:02:48 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第245页共11086页
+
+   2012-07-27 18:02:49 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第246页共11086页
+
+   2012-07-27 18:02:51 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第247页共11086页
+
+   2012-07-27 18:02:51 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第248页共11086页
+
+   2012-07-27 18:02:51 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第249页共11086页
+
+   2012-07-27 18:02:54 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第250页共11086页
+
+   2012-07-27 18:02:55 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第251页共11086页
+
+   2012-07-27 18:02:55 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第252页共11086页
+
+   2012-07-27 18:02:55 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第254页共11086页
+
+   2012-07-27 18:02:55 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第253页共11086页
+
+   2012-07-27 18:02:56 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第255页共11086页
+
+   2012-07-27 18:02:56 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第256页共11086页
+
+   2012-07-27 18:02:57 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第258页共11086页
+
+   2012-07-27 18:02:57 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第259页共11086页
+
+   2012-07-27 18:02:57 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第257页共11086页
+
+   2012-07-27 18:03:00 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第260页共11086页
+
+   2012-07-27 18:03:00 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第261页共11086页
+
+   2012-07-27 18:03:00 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第262页共11086页
+
+   2012-07-27 18:03:02 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第263页共11086页
+
+   2012-07-27 18:03:03 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第266页共11086页
+
+   2012-07-27 18:03:03 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第265页共11086页
+
+   2012-07-27 18:03:03 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第264页共11086页
+
+   2012-07-27 18:03:04 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第267页共11086页
+
+   2012-07-27 18:03:04 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第268页共11086页
+
+   2012-07-27 18:03:05 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第269页共11086页
+
+   2012-07-27 18:03:05 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第270页共11086页
+
+   2012-07-27 18:03:06 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第272页共11086页
+
+   2012-07-27 18:03:06 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第271页共11086页
+
+   2012-07-27 18:03:08 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第273页共11086页
+
+   2012-07-27 18:03:08 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第274页共11086页
+
+   2012-07-27 18:03:10 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第275页共11086页
+
+   2012-07-27 18:03:13 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第276页共11086页
+
+   2012-07-27 18:03:13 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第279页共11086页
+
+   2012-07-27 18:03:13 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第280页共11086页
+
+   2012-07-27 18:03:13 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第277页共11086页
+
+   2012-07-27 18:03:13 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第278页共11086页
+
+   2012-07-27 18:03:13 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第281页共11086页
+
+   2012-07-27 18:03:15 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第282页共11086页
+
+   2012-07-27 18:03:15 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第283页共11086页
+
+   2012-07-27 18:03:16 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第284页共11086页
+
+   2012-07-27 18:03:16 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第285页共11086页
+
+   2012-07-27 18:03:20 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第286页共11086页
+
+   2012-07-27 18:03:20 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第287页共11086页
+
+   2012-07-27 18:03:20 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第288页共11086页
+
+   2012-07-27 18:03:21 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第293页共11086页
+
+   2012-07-27 18:03:21 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第292页共11086页
+
+   2012-07-27 18:03:21 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第294页共11086页
+
+   2012-07-27 18:03:22 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第291页共11086页
+
+   2012-07-27 18:03:22 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第290页共11086页
+
+   2012-07-27 18:03:22 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第289页共11086页
+
+   2012-07-27 18:03:24 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第295页共11086页
+
+   2012-07-27 18:03:26 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第296页共11086页
+
+   2012-07-27 18:03:26 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第297页共11086页
+
+   2012-07-27 18:03:26 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第298页共11086页
+
+   2012-07-27 18:03:28 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第299页共11086页
+
+   2012-07-27 18:03:28 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第301页共11086页
+
+   2012-07-27 18:03:28 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第300页共11086页
+
+   2012-07-27 18:03:28 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第304页共11086页
+
+   2012-07-27 18:03:28 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第303页共11086页
+
+   2012-07-27 18:03:28 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第302页共11086页
+
+   2012-07-27 18:03:30 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第305页共11086页
+
+   2012-07-27 18:03:32 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第306页共11086页
+
+   2012-07-27 18:03:32 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第307页共11086页
+
+   2012-07-27 18:03:32 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第308页共11086页
+
+   2012-07-27 18:03:34 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第309页共11086页
+
+   2012-07-27 18:03:35 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第310页共11086页
+
+   2012-07-27 18:03:35 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第311页共11086页
+
+   2012-07-27 18:03:36 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第313页共11086页
+
+   2012-07-27 18:03:36 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第312页共11086页
+
+   2012-07-27 18:03:36 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第315页共11086页
+
+   2012-07-27 18:03:37 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第314页共11086页
+
+   2012-07-27 18:03:38 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第316页共11086页
+
+   2012-07-27 18:03:38 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第317页共11086页
+
+   2012-07-27 18:03:38 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第318页共11086页
+
+   2012-07-27 18:03:40 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第319页共11086页
+
+   2012-07-27 18:03:41 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第320页共11086页
+
+   2012-07-27 18:03:41 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第321页共11086页
+
+   2012-07-27 18:03:42 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第324页共11086页
+
+   2012-07-27 18:03:43 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第322页共11086页
+
+   2012-07-27 18:03:43 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第323页共11086页
+
+   2012-07-27 18:03:44 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第325页共11086页
+
+   2012-07-27 18:03:44 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第327页共11086页
+
+   2012-07-27 18:03:44 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第326页共11086页
+
+   2012-07-27 18:03:46 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第328页共11086页
+
+   2012-07-27 18:03:47 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第329页共11086页
+
+   2012-07-27 18:03:48 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第330页共11086页
+
+   2012-07-27 18:03:48 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第331页共11086页
+
+   2012-07-27 18:03:48 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第332页共11086页
+
+   2012-07-27 18:03:50 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第334页共11086页
+
+   2012-07-27 18:03:50 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第333页共11086页
+
+   2012-07-27 18:03:50 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第335页共11086页
+
+   2012-07-27 18:03:51 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第336页共11086页
+
+   2012-07-27 18:03:52 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第338页共11086页
+
+   2012-07-27 18:03:53 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第337页共11086页
+
+   2012-07-27 18:03:53 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第339页共11086页
+
+   2012-07-27 18:03:54 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第340页共11086页
+
+   2012-07-27 18:03:54 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第341页共11086页
+
+   2012-07-27 18:03:54 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第342页共11086页
+
+   2012-07-27 18:03:56 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第344页共11086页
+
+   2012-07-27 18:03:56 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第343页共11086页
+
+   2012-07-27 18:03:56 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第345页共11086页
+
+   2012-07-27 18:03:57 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第346页共11086页
+
+   2012-07-27 18:03:58 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第347页共11086页
+
+   2012-07-27 18:03:59 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第348页共11086页
+
+   2012-07-27 18:04:00 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第352页共11086页
+
+   2012-07-27 18:04:00 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第349页共11086页
+
+   2012-07-27 18:04:00 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第350页共11086页
+
+   2012-07-27 18:04:02 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第351页共11086页
+
+   2012-07-27 18:04:03 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第353页共11086页
+
+   2012-07-27 18:04:03 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第354页共11086页
+
+   2012-07-27 18:04:03 com.youboy.vs.interfaces.task.ParametersTask$SaveParameter.run(ParametersTask.java:110) 
+ INFO 已经跑完第355页共11086页
+
+   2012-07-27 18:04:04 com.youboy.vs.inte

@@ -1,0 +1,531 @@
+2012-07-20 11:03:27 org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:273) 
+ INFO Root WebApplicationContext: initialization started
+
+   2012-07-20 11:03:27 org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:495) 
+ INFO Refreshing Root WebApplicationContext: startup date [Fri Jul 20 11:03:27 CST 2012]; root of context hierarchy
+
+   2012-07-20 11:03:27 org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:315) 
+ INFO Loading XML bean definitions from class path resource [META-INF/application-root.xml]
+
+   2012-07-20 11:03:28 org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:315) 
+ INFO Loading XML bean definitions from class path resource [META-INF/shiro/application-shiro.xml]
+
+   2012-07-20 11:03:28 org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:315) 
+ INFO Loading XML bean definitions from class path resource [META-INF/mongodb/application-mongodb.xml]
+
+   2012-07-20 11:03:28 org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:315) 
+ INFO Loading XML bean definitions from class path resource [META-INF/quartz/quartz.xml]
+
+   2012-07-20 11:03:29 org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:177) 
+ INFO Loading properties file from URL [file:/D:/project/company/visitors-statistics/target/classes/application.properties]
+
+   2012-07-20 11:03:29 org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:177) 
+ INFO Loading properties file from URL [file:/D:/project/company/visitors-statistics/target/classes/META-INF/mongodb/mongodb.properties]
+
+   2012-07-20 11:03:29 org.springframework.context.support.AbstractApplicationContext$BeanPostProcessorChecker.postProcessAfterInitialization(AbstractApplicationContext.java:1350) 
+ INFO Bean 'myRealm' of type [class com.youboy.vs.infrastructure.shiro.MongoShiroRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+   2012-07-20 11:03:29 org.springframework.context.support.AbstractApplicationContext$BeanPostProcessorChecker.postProcessAfterInitialization(AbstractApplicationContext.java:1350) 
+ INFO Bean 'securityManager' of type [class org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+   2012-07-20 11:03:29 org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:557) 
+ INFO Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@20e0b1d6: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,springBeanHolder,executorsSingleton,parametersTempServiceImpl,purchaseTempServiceImpl,supplyTempServiceImpl,authorityServiceImpl,indexedDetailsServiceImpl,roleServiceImpl,userServiceImpl,ip2cityServiceImpl,ipServiceImpl,parametersServiceImpl,purchaseServiceImpl,statisticsServiceImpl,supplyServiceImpl,visitDetailsServiceImpl,mongoParamtersTempRepository,mongoPurchaseTempRepository,mongoSupplyTempRepository,mongoAuthorityRepository,mongoIndexedDetailsRepository,mongoRoleRepository,mongoUserRepository,mongoIp2CityRepository,mongoIpRepository,mongoParamtersRepository,mongoPurchaseRepository,statisticsRepository,mongoSupplyRepository,visitDetailsRepository,initFirstDayRepository,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.aop.config.internalAutoProxyCreator,shiroFilter,myRealm,securityManager,lifecycleBeanPostProcessor,org.springframework.beans.factory.config.MethodInvokingFactoryBean#0,org.springframework.beans.factory.config.CustomEditorConfigurer#0,org.springframework.beans.factory.config.CustomEditorConfigurer#1,mongo,org.springframework.beans.factory.config.CustomEditorConfigurer#2,mongoDbFactory,mongoTemplate,mappingContext,indexCreationHelper,mappingConverter,visitorsTask,detailTask,parametersTask,supplyTask,purchaseTask,parametersTempTask,supplyTempTask,purchaseTempTask,visitorsTaskJob,detailTaskJob,parametersJob,supplyJob,purchaseJob,parametersTempJob,supplyTempJob,purchaseTempJob,visitorsTrigger,detailTrigger,parameterTrigger,supplyTrigger,purchaseTrigger,parameterTempTrigger,supplyTempTrigger,purchaseTempTrigger,org.springframework.scheduling.quartz.SchedulerFactoryBean#0,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy
+
+   2012-07-20 11:03:32 org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:433) 
+ INFO Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@20e0b1d6: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,springBeanHolder,executorsSingleton,parametersTempServiceImpl,purchaseTempServiceImpl,supplyTempServiceImpl,authorityServiceImpl,indexedDetailsServiceImpl,roleServiceImpl,userServiceImpl,ip2cityServiceImpl,ipServiceImpl,parametersServiceImpl,purchaseServiceImpl,statisticsServiceImpl,supplyServiceImpl,visitDetailsServiceImpl,mongoParamtersTempRepository,mongoPurchaseTempRepository,mongoSupplyTempRepository,mongoAuthorityRepository,mongoIndexedDetailsRepository,mongoRoleRepository,mongoUserRepository,mongoIp2CityRepository,mongoIpRepository,mongoParamtersRepository,mongoPurchaseRepository,statisticsRepository,mongoSupplyRepository,visitDetailsRepository,initFirstDayRepository,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.aop.config.internalAutoProxyCreator,shiroFilter,myRealm,securityManager,lifecycleBeanPostProcessor,org.springframework.beans.factory.config.MethodInvokingFactoryBean#0,org.springframework.beans.factory.config.CustomEditorConfigurer#0,org.springframework.beans.factory.config.CustomEditorConfigurer#1,mongo,org.springframework.beans.factory.config.CustomEditorConfigurer#2,mongoDbFactory,mongoTemplate,mappingContext,indexCreationHelper,mappingConverter,visitorsTask,detailTask,parametersTask,supplyTask,purchaseTask,parametersTempTask,supplyTempTask,purchaseTempTask,visitorsTaskJob,detailTaskJob,parametersJob,supplyJob,purchaseJob,parametersTempJob,supplyTempJob,purchaseTempJob,visitorsTrigger,detailTrigger,parameterTrigger,supplyTrigger,purchaseTrigger,parameterTempTrigger,supplyTempTrigger,purchaseTempTrigger,org.springframework.scheduling.quartz.SchedulerFactoryBean#0,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy
+
+   2012-07-20 11:03:32 org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:308) 
+ ERROR Context initialization failed
+
+   org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mappingContext': Invocation of init method failed; nested exception is com.mongodb.MongoException: can't find a master
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1455)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:519)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.c2012-07-20 11:04:20 org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:273) 
+ INFO Root WebApplicationContext: initialization started
+
+   2012-07-20 11:04:20 org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:495) 
+ INFO Refreshing Root WebApplicationContext: startup date [Fri Jul 20 11:04:20 CST 2012]; root of context hierarchy
+
+   2012-07-20 11:04:20 org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:315) 
+ INFO Loading XML bean definitions from class path resource [META-INF/application-root.xml]
+
+   2012-07-20 11:04:20 org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:315) 
+ INFO Loading XML bean definitions from class path resource [META-INF/shiro/application-shiro.xml]
+
+   2012-07-20 11:04:20 org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:315) 
+ INFO Loading XML bean definitions from class path resource [META-INF/mongodb/application-mongodb.xml]
+
+   2012-07-20 11:04:20 org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:315) 
+ INFO Loading XML bean definitions from class path resource [META-INF/quartz/quartz.xml]
+
+   2012-07-20 11:04:21 org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:177) 
+ INFO Loading properties file from URL [file:/D:/project/company/visitors-statistics/target/classes/application.properties]
+
+   2012-07-20 11:04:21 org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:177) 
+ INFO Loading properties file from URL [file:/D:/project/company/visitors-statistics/target/classes/META-INF/mongodb/mongodb.properties]
+
+   2012-07-20 11:04:21 org.springframework.context.support.AbstractApplicationContext$BeanPostProcessorChecker.postProcessAfterInitialization(AbstractApplicationContext.java:1350) 
+ INFO Bean 'myRealm' of type [class com.youboy.vs.infrastructure.shiro.MongoShiroRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+   2012-07-20 11:04:21 org.springframework.context.support.AbstractApplicationContext$BeanPostProcessorChecker.postProcessAfterInitialization(AbstractApplicationContext.java:1350) 
+ INFO Bean 'securityManager' of type [class org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+   2012-07-20 11:04:21 org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:557) 
+ INFO Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@693a1324: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,springBeanHolder,executorsSingleton,parametersTempServiceImpl,purchaseTempServiceImpl,supplyTempServiceImpl,authorityServiceImpl,indexedDetailsServiceImpl,roleServiceImpl,userServiceImpl,ip2cityServiceImpl,ipServiceImpl,parametersServiceImpl,purchaseServiceImpl,statisticsServiceImpl,supplyServiceImpl,visitDetailsServiceImpl,mongoParamtersTempRepository,mongoPurchaseTempRepository,mongoSupplyTempRepository,mongoAuthorityRepository,mongoIndexedDetailsRepository,mongoRoleRepository,mongoUserRepository,mongoIp2CityRepository,mongoIpRepository,mongoParamtersRepository,mongoPurchaseRepository,statisticsRepository,mongoSupplyRepository,visitDetailsRepository,initFirstDayRepository,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.aop.config.internalAutoProxyCreator,shiroFilter,myRealm,securityManager,lifecycleBeanPostProcessor,org.springframework.beans.factory.config.MethodInvokingFactoryBean#0,org.springframework.beans.factory.config.CustomEditorConfigurer#0,org.springframework.beans.factory.config.CustomEditorConfigurer#1,mongo,org.springframework.beans.factory.config.CustomEditorConfigurer#2,mongoDbFactory,mongoTemplate,mappingContext,indexCreationHelper,mappingConverter,visitorsTask,detailTask,parametersTask,supplyTask,purchaseTask,parametersTempTask,supplyTempTask,purchaseTempTask,visitorsTaskJob,detailTaskJob,parametersJob,supplyJob,purchaseJob,parametersTempJob,supplyTempJob,purchaseTempJob,visitorsTrigger,detailTrigger,parameterTrigger,supplyTrigger,purchaseTrigger,parameterTempTrigger,supplyTempTrigger,purchaseTempTrigger,org.springframework.scheduling.quartz.SchedulerFactoryBean#0,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy
+
+   2012-07-20 11:04:22 org.quartz.core.QuartzScheduler.<init>(QuartzScheduler.java:195) 
+ INFO Quartz Scheduler v.1.5.2 created.
+
+   2012-07-20 11:04:22 org.quartz.simpl.RAMJobStore.initialize(RAMJobStore.java:138) 
+ INFO RAMJobStore initialized.
+
+   2012-07-20 11:04:22 org.quartz.impl.StdSchedulerFactory.instantiate(StdSchedulerFactory.java:1014) 
+ INFO Quartz scheduler 'org.springframework.scheduling.quartz.SchedulerFactoryBean#0' initialized from an externally provided properties instance.
+
+   2012-07-20 11:04:22 org.quartz.impl.StdSchedulerFactory.instantiate(StdSchedulerFactory.java:1018) 
+ INFO Quartz scheduler version: 1.5.2
+
+   2012-07-20 11:04:22 org.quartz.core.QuartzScheduler.setJobFactory(QuartzScheduler.java:1853) 
+ INFO JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@2b5d7e8e
+
+   2012-07-20 11:04:22 org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:334) 
+ INFO Starting beans in phase 2147483647
+
+   2012-07-20 11:04:22 org.springframework.scheduling.quartz.SchedulerFactoryBean.startScheduler(SchedulerFactoryBean.java:648) 
+ INFO Starting Quartz Scheduler now
+
+   2012-07-20 11:04:22 org.quartz.core.QuartzScheduler.start(QuartzScheduler.java:400) 
+ INFO Scheduler org.springframework.scheduling.quartz.SchedulerFactoryBean#0_$_NON_CLUSTERED started.
+
+   2012-07-20 11:04:22 org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:302) 
+ INFO Root WebApplicationContext: initialization completed in 2813 ms
+
+   2012-07-20 11:04:22 org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:444) 
+ INFO FrameworkServlet 'appServlet': initialization started
+
+   2012-07-20 11:04:22 org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:495) 
+ INFO Refreshing WebApplicationContext for namespace 'appServlet-servlet': startup date [Fri Jul 20 11:04:22 CST 2012]; parent: Root WebApplicationContext
+
+   2012-07-20 11:04:23 org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:315) 
+ INFO Loading XML bean definitions from ServletContext resource [/WEB-INF/spring/appServlet/servlet-context.xml]
+
+   2012-07-20 11:04:23 org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:557) 
+ INFO Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@7442df79: defining beans [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0,org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0,org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0,org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping,org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter,org.springframework.context.annotation.internalAsyncAnnotationProcessor,org.springframework.context.annotation.internalScheduledAnnotationProcessor,org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0,viewResolver,multipartResolver,adminController,captchaController,securityAuthorityController,securityRoleController,securityUserController,indexedDetailsController,initFirstDayController,initFirstDayRepository,ip2CityController,testController,visitDetailsController,visitorsStatisticsController,visitorsStatisticsParametersController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@693a1324
+
+   2012-07-20 11:04:23 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/admin/head],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.admin.AdminController.head()
+
+   2012-07-20 11:04:23 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/admin/left],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.admin.AdminController.left()
+
+   2012-07-20 11:04:23 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/admin/right],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.admin.AdminController.right(org.springframework.ui.Model)
+
+   2012-07-20 11:04:23 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/admin/index],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.admin.AdminController.index()
+
+   2012-07-20 11:04:23 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/admin/logout],methods=[GET || POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.admin.AdminController.logout()
+
+   2012-07-20 11:04:23 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/ || /login],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.admin.AdminController.login()
+
+   2012-07-20 11:04:23 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/login],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.admin.AdminController.login(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpSession)
+
+   2012-07-20 11:04:23 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/admin/deny],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.admin.AdminController.deny()
+
+   2012-07-20 11:04:23 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/admin/foot],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.admin.AdminController.foot()
+
+   2012-07-20 11:04:23 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/admin/sys],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.admin.AdminController.sys()
+
+   2012-07-20 11:04:23 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/admin/visitor],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.admin.AdminController.hummerApi()
+
+   2012-07-20 11:04:23 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/captcha],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void com.youboy.vs.interfaces.admin.CaptchaController.captcha(javax.servlet.http.HttpSession,java.io.OutputStream)
+
+   2012-07-20 11:04:23 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/security/authority/list],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.admin.SecurityAuthorityController.list(com.youboy.core.orm.Page<com.youboy.vs.domain.user.Authority>,org.springframework.ui.Model)
+
+   2012-07-20 11:04:23 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/security/authority/{id}/delete],methods=[DELETE],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.admin.SecurityAuthorityController.delete(java.lang.String)
+
+   2012-07-20 11:04:23 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/security/authority/delete],methods=[DELETE],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.admin.SecurityAuthorityController.delete(javax.servlet.http.HttpServletRequest)
+
+   2012-07-20 11:04:23 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/security/authority/create],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.admin.SecurityAuthorityController.create(com.youboy.vs.domain.user.Authority)
+
+   2012-07-20 11:04:23 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/security/authority/create],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.admin.SecurityAuthorityController.create(org.springframework.ui.Model)
+
+   2012-07-20 11:04:23 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/security/authority/check],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.admin.SecurityAuthorityController.checkUser(java.lang.String) throws java.io.IOException
+
+   2012-07-20 11:04:23 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/security/authority/{id}/edit],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.admin.SecurityAuthorityController.edit(java.lang.String,org.springframework.ui.Model)
+
+   2012-07-20 11:04:23 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/security/authority/{id}/edit],methods=[PUT],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.admin.SecurityAuthorityController.edit(com.youboy.vs.domain.user.Authority,javax.servlet.http.HttpServletRequest)
+
+   2012-07-20 11:04:23 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/security/role/list],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.admin.SecurityRoleController.list(com.youboy.core.orm.Page<com.youboy.vs.domain.user.Role>,org.springframework.ui.Model)
+
+   2012-07-20 11:04:23 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/security/role/{id}/delete],methods=[DELETE],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.admin.SecurityRoleController.delete(java.lang.String)
+
+   2012-07-20 11:04:23 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/security/role/delete],methods=[DELETE],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.admin.SecurityRoleController.delete(javax.servlet.http.HttpServletRequest)
+
+   2012-07-20 11:04:23 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/security/role/create],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.admin.SecurityRoleController.create(com.youboy.vs.domain.user.Role,javax.servlet.http.HttpServletRequest)
+
+   2012-07-20 11:04:23 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/security/role/create],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.admin.SecurityRoleController.create(org.springframework.ui.Model)
+
+   2012-07-20 11:04:23 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/security/role/check],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.admin.SecurityRoleController.checkUser(java.lang.String) throws java.io.IOException
+
+   2012-07-20 11:04:23 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/security/role/{id}/edit],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.admin.SecurityRoleController.edit(java.lang.String,org.springframework.ui.Model)
+
+   2012-07-20 11:04:23 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/security/role/{id}/edit],methods=[PUT],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.admin.SecurityRoleController.edit(com.youboy.vs.domain.user.Role,javax.servlet.http.HttpServletRequest)
+
+   2012-07-20 11:04:23 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/security/user/list],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.admin.SecurityUserController.list(com.youboy.core.orm.Page<com.youboy.vs.domain.user.User>,org.springframework.ui.Model)
+
+   2012-07-20 11:04:23 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/security/user/{id}/delete],methods=[DELETE],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.admin.SecurityUserController.delete(java.lang.String)
+
+   2012-07-20 11:04:23 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/security/user/delete],methods=[DELETE],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.admin.SecurityUserController.delete(javax.servlet.http.HttpServletRequest)
+
+   2012-07-20 11:04:23 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/security/user/create],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.admin.SecurityUserController.create(com.youboy.vs.domain.user.User,javax.servlet.http.HttpServletRequest)
+
+   2012-07-20 11:04:23 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/security/user/create],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.admin.SecurityUserController.create(org.springframework.ui.Model)
+
+   2012-07-20 11:04:23 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/security/user/check],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.admin.SecurityUserController.checkUser(java.lang.String) throws java.io.IOException
+
+   2012-07-20 11:04:23 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/security/user/{id}/edit],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.admin.SecurityUserController.edit(java.lang.String,org.springframework.ui.Model)
+
+   2012-07-20 11:04:23 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/security/user/{id}/edit],methods=[PUT],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.admin.SecurityUserController.edit(com.youboy.vs.domain.user.User,javax.servlet.http.HttpServletRequest)
+
+   2012-07-20 11:04:23 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/indexed/{name}/list],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void com.youboy.vs.interfaces.IndexedDetailsController.list(com.youboy.core.orm.Page<com.youboy.vs.domain.user.IndexedDetails>,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,org.springframework.ui.Model)
+
+   2012-07-20 11:04:23 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/indexed/index],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.IndexedDetailsController.indexed(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)
+
+   2012-07-20 11:04:23 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/init-first-day/init],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.init.InitFirstDayController.initFirstDay()
+
+   2012-07-20 11:04:23 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/ip-2-city],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.Ip2CityController.init()
+
+   2012-07-20 11:04:23 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/visitors/test],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.TestController.text(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)
+
+   2012-07-20 11:04:23 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/visitors/source],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.TestController.source(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)
+
+   2012-07-20 11:04:23 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/visitors/add-role],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.TestController.addRole()
+
+   2012-07-20 11:04:23 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/visitors/response],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.TestController.response(javax.servlet.http.HttpServletResponse) throws java.io.IOException
+
+   2012-07-20 11:04:23 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/visitors/get-data],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.List<com.youboy.vs.domain.visitors.Parameters> com.youboy.vs.interfaces.TestController.sendData(javax.servlet.http.HttpServletResponse)
+
+   2012-07-20 11:04:23 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/visitors/add-user],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.TestController.addUserTest()
+
+   2012-07-20 11:04:23 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/visitors/add-authority],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.TestController.Authority()
+
+   2012-07-20 11:04:23 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/visitors/sendRequest],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.TestController.sendRequest(javax.servlet.http.HttpServletResponse)
+
+   2012-07-20 11:04:23 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/visitdetails/add],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void com.youboy.vs.interfaces.VisitDetailsController.add(java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)
+
+   2012-07-20 11:04:23 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/visitdetails/list],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.VisitDetailsController.list(com.youboy.core.orm.Page<com.youboy.vs.domain.visitors.VisitDetails>,org.springframework.ui.Model)
+
+   2012-07-20 11:04:23 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/visitdetails/{name}/list],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void com.youboy.vs.interfaces.VisitDetailsController.list(com.youboy.core.orm.Page<com.youboy.vs.domain.visitors.VisitDetails>,java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse,org.springframework.ui.Model)
+
+   2012-07-20 11:04:23 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/visitdetails/delete],methods=[DELETE],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.VisitDetailsController.delete(javax.servlet.http.HttpServletRequest)
+
+   2012-07-20 11:04:23 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/visitdetails/{id}/delete],methods=[DELETE],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.VisitDetailsController.delete(java.lang.String)
+
+   2012-07-20 11:04:23 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/visitdetails/create],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.VisitDetailsController.create(org.springframework.ui.Model)
+
+   2012-07-20 11:04:23 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/visitdetails/create],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.VisitDetailsController.create(com.youboy.vs.domain.visitors.VisitDetails,org.springframework.validation.BindingResult)
+
+   2012-07-20 11:04:23 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/visitdetails/{id}/edit],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.VisitDetailsController.edit(java.lang.String,javax.servlet.http.HttpServletRequest)
+
+   2012-07-20 11:04:23 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/visitdetails/{id}/edit],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.VisitDetailsController.edit(java.lang.String,org.springframework.ui.Model)
+
+   2012-07-20 11:04:23 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/visitdetails/{name}/busines-list],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void com.youboy.vs.interfaces.VisitDetailsController.listVisitBusinessmen(com.youboy.core.orm.Page<com.youboy.vs.domain.visitors.VisitDetails>,java.lang.String,int,java.lang.String,javax.se2012-07-20 11:05:59 org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:273) 
+ INFO Root WebApplicationContext: initialization started
+
+   2012-07-20 11:05:59 org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:495) 
+ INFO Refreshing Root WebApplicationContext: startup date [Fri Jul 20 11:05:59 CST 2012]; root of context hierarchy
+
+   2012-07-20 11:05:59 org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:315) 
+ INFO Loading XML bean definitions from class path resource [META-INF/application-root.xml]
+
+   2012-07-20 11:06:00 org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:315) 
+ INFO Loading XML bean definitions from class path resource [META-INF/shiro/application-shiro.xml]
+
+   2012-07-20 11:06:00 org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:315) 
+ INFO Loading XML bean definitions from class path resource [META-INF/mongodb/application-mongodb.xml]
+
+   2012-07-20 11:06:00 org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:315) 
+ INFO Loading XML bean definitions from class path resource [META-INF/quartz/quartz.xml]
+
+   2012-07-20 11:06:00 org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:177) 
+ INFO Loading properties file from URL [file:/D:/project/company/visitors-statistics/target/classes/application.properties]
+
+   2012-07-20 11:06:00 org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:177) 
+ INFO Loading properties file from URL [file:/D:/project/company/visitors-statistics/target/classes/META-INF/mongodb/mongodb.properties]
+
+   2012-07-20 11:06:00 org.springframework.context.support.AbstractApplicationContext$BeanPostProcessorChecker.postProcessAfterInitialization(AbstractApplicationContext.java:1350) 
+ INFO Bean 'myRealm' of type [class com.youboy.vs.infrastructure.shiro.MongoShiroRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+   2012-07-20 11:06:00 org.springframework.context.support.AbstractApplicationContext$BeanPostProcessorChecker.postProcessAfterInitialization(AbstractApplicationContext.java:1350) 
+ INFO Bean 'securityManager' of type [class org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+   2012-07-20 11:06:01 org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:557) 
+ INFO Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@36d8f5e8: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,springBeanHolder,executorsSingleton,parametersTempServiceImpl,purchaseTempServiceImpl,supplyTempServiceImpl,authorityServiceImpl,indexedDetailsServiceImpl,roleServiceImpl,userServiceImpl,ip2cityServiceImpl,ipServiceImpl,parametersServiceImpl,purchaseServiceImpl,statisticsServiceImpl,supplyServiceImpl,visitDetailsServiceImpl,mongoParamtersTempRepository,mongoPurchaseTempRepository,mongoSupplyTempRepository,mongoAuthorityRepository,mongoIndexedDetailsRepository,mongoRoleRepository,mongoUserRepository,mongoIp2CityRepository,mongoIpRepository,mongoParamtersRepository,mongoPurchaseRepository,statisticsRepository,mongoSupplyRepository,visitDetailsRepository,initFirstDayRepository,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.aop.config.internalAutoProxyCreator,shiroFilter,myRealm,securityManager,lifecycleBeanPostProcessor,org.springframework.beans.factory.config.MethodInvokingFactoryBean#0,org.springframework.beans.factory.config.CustomEditorConfigurer#0,org.springframework.beans.factory.config.CustomEditorConfigurer#1,mongo,org.springframework.beans.factory.config.CustomEditorConfigurer#2,mongoDbFactory,mongoTemplate,mappingContext,indexCreationHelper,mappingConverter,visitorsTask,detailTask,parametersTask,supplyTask,purchaseTask,parametersTempTask,supplyTempTask,purchaseTempTask,visitorsTaskJob,detailTaskJob,parametersJob,supplyJob,purchaseJob,parametersTempJob,supplyTempJob,purchaseTempJob,visitorsTrigger,detailTrigger,parameterTrigger,supplyTrigger,purchaseTrigger,parameterTempTrigger,supplyTempTrigger,purchaseTempTrigger,org.springframework.scheduling.quartz.SchedulerFactoryBean#0,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy
+
+   2012-07-20 11:06:02 org.quartz.core.QuartzScheduler.<init>(QuartzScheduler.java:195) 
+ INFO Quartz Scheduler v.1.5.2 created.
+
+   2012-07-20 11:06:02 org.quartz.simpl.RAMJobStore.initialize(RAMJobStore.java:138) 
+ INFO RAMJobStore initialized.
+
+   2012-07-20 11:06:02 org.quartz.impl.StdSchedulerFactory.instantiate(StdSchedulerFactory.java:1014) 
+ INFO Quartz scheduler 'org.springframework.scheduling.quartz.SchedulerFactoryBean#0' initialized from an externally provided properties instance.
+
+   2012-07-20 11:06:02 org.quartz.impl.StdSchedulerFactory.instantiate(StdSchedulerFactory.java:1018) 
+ INFO Quartz scheduler version: 1.5.2
+
+   2012-07-20 11:06:02 org.quartz.core.QuartzScheduler.setJobFactory(QuartzScheduler.java:1853) 
+ INFO JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@2fb24628
+
+   2012-07-20 11:06:02 org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:334) 
+ INFO Starting beans in phase 2147483647
+
+   2012-07-20 11:06:02 org.springframework.scheduling.quartz.SchedulerFactoryBean.startScheduler(SchedulerFactoryBean.java:648) 
+ INFO Starting Quartz Scheduler now
+
+   2012-07-20 11:06:02 org.quartz.core.QuartzScheduler.start(QuartzScheduler.java:400) 
+ INFO Scheduler org.springframework.scheduling.quartz.SchedulerFactoryBean#0_$_NON_CLUSTERED started.
+
+   2012-07-20 11:06:02 org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:302) 
+ INFO Root WebApplicationContext: initialization completed in 2525 ms
+
+   2012-07-20 11:06:02 org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:444) 
+ INFO FrameworkServlet 'appServlet': initialization started
+
+   2012-07-20 11:06:02 org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:495) 
+ INFO Refreshing WebApplicationContext for namespace 'appServlet-servlet': startup date [Fri Jul 20 11:06:02 CST 2012]; parent: Root WebApplicationContext
+
+   2012-07-20 11:06:02 org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:315) 
+ INFO Loading XML bean definitions from ServletContext resource [/WEB-INF/spring/appServlet/servlet-context.xml]
+
+   2012-07-20 11:06:02 org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:557) 
+ INFO Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@4e1557af: defining beans [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0,org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0,org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0,org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping,org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter,org.springframework.context.annotation.internalAsyncAnnotationProcessor,org.springframework.context.annotation.internalScheduledAnnotationProcessor,org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0,viewResolver,multipartResolver,adminController,captchaController,securityAuthorityController,securityRoleController,securityUserController,indexedDetailsController,initFirstDayController,initFirstDayRepository,ip2CityController,testController,visitDetailsController,visitorsStatisticsController,visitorsStatisticsParametersController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@36d8f5e8
+
+   2012-07-20 11:06:02 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/admin/head],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.admin.AdminController.head()
+
+   2012-07-20 11:06:02 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/admin/left],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.admin.AdminController.left()
+
+   2012-07-20 11:06:02 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/admin/right],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.admin.AdminController.right(org.springframework.ui.Model)
+
+   2012-07-20 11:06:02 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/admin/index],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.admin.AdminController.index()
+
+   2012-07-20 11:06:02 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/admin/logout],methods=[GET || POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.admin.AdminController.logout()
+
+   2012-07-20 11:06:02 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/ || /login],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.admin.AdminController.login()
+
+   2012-07-20 11:06:02 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/login],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.admin.AdminController.login(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpSession)
+
+   2012-07-20 11:06:02 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/admin/deny],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.admin.AdminController.deny()
+
+   2012-07-20 11:06:02 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/admin/foot],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.admin.AdminController.foot()
+
+   2012-07-20 11:06:02 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/admin/sys],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.admin.AdminController.sys()
+
+   2012-07-20 11:06:02 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/admin/visitor],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.admin.AdminController.hummerApi()
+
+   2012-07-20 11:06:02 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/captcha],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void com.youboy.vs.interfaces.admin.CaptchaController.captcha(javax.servlet.http.HttpSession,java.io.OutputStream)
+
+   2012-07-20 11:06:02 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/security/authority/list],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.admin.SecurityAuthorityController.list(com.youboy.core.orm.Page<com.youboy.vs.domain.user.Authority>,org.springframework.ui.Model)
+
+   2012-07-20 11:06:02 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/security/authority/{id}/delete],methods=[DELETE],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.admin.SecurityAuthorityController.delete(java.lang.String)
+
+   2012-07-20 11:06:02 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/security/authority/delete],methods=[DELETE],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.admin.SecurityAuthorityController.delete(javax.servlet.http.HttpServletRequest)
+
+   2012-07-20 11:06:02 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/security/authority/create],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.admin.SecurityAuthorityController.create(com.youboy.vs.domain.user.Authority)
+
+   2012-07-20 11:06:02 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/security/authority/create],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.admin.SecurityAuthorityController.create(org.springframework.ui.Model)
+
+   2012-07-20 11:06:02 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/security/authority/check],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.admin.SecurityAuthorityController.checkUser(java.lang.String) throws java.io.IOException
+
+   2012-07-20 11:06:02 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/security/authority/{id}/edit],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.admin.SecurityAuthorityController.edit(java.lang.String,org.springframework.ui.Model)
+
+   2012-07-20 11:06:02 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/security/authority/{id}/edit],methods=[PUT],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.admin.SecurityAuthorityController.edit(com.youboy.vs.domain.user.Authority,javax.servlet.http.HttpServletRequest)
+
+   2012-07-20 11:06:02 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/security/role/list],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.admin.SecurityRoleController.list(com.youboy.core.orm.Page<com.youboy.vs.domain.user.Role>,org.springframework.ui.Model)
+
+   2012-07-20 11:06:02 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/security/role/{id}/delete],methods=[DELETE],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.admin.SecurityRoleController.delete(java.lang.String)
+
+   2012-07-20 11:06:02 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/security/role/delete],methods=[DELETE],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.admin.SecurityRoleController.delete(javax.servlet.http.HttpServletRequest)
+
+   2012-07-20 11:06:02 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/security/role/create],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.admin.SecurityRoleController.create(com.youboy.vs.domain.user.Role,javax.servlet.http.HttpServletRequest)
+
+   2012-07-20 11:06:02 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/security/role/create],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.admin.SecurityRoleController.create(org.springframework.ui.Model)
+
+   2012-07-20 11:06:02 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/security/role/check],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.admin.SecurityRoleController.checkUser(java.lang.String) throws java.io.IOException
+
+   2012-07-20 11:06:02 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/security/role/{id}/edit],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.admin.SecurityRoleController.edit(java.lang.String,org.springframework.ui.Model)
+
+   2012-07-20 11:06:02 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/security/role/{id}/edit],methods=[PUT],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.admin.SecurityRoleController.edit(com.youboy.vs.domain.user.Role,javax.servlet.http.HttpServletRequest)
+
+   2012-07-20 11:06:02 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/security/user/list],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.admin.SecurityUserController.list(com.youboy.core.orm.Page<com.youboy.vs.domain.user.User>,org.springframework.ui.Model)
+
+   2012-07-20 11:06:02 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/security/user/{id}/delete],methods=[DELETE],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.admin.SecurityUserController.delete(java.lang.String)
+
+   2012-07-20 11:06:02 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/security/user/delete],methods=[DELETE],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.admin.SecurityUserController.delete(javax.servlet.http.HttpServletRequest)
+
+   2012-07-20 11:06:02 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/security/user/create],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.admin.SecurityUserController.create(com.youboy.vs.domain.user.User,javax.servlet.http.HttpServletRequest)
+
+   2012-07-20 11:06:02 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/security/user/create],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.admin.SecurityUserController.create(org.springframework.ui.Model)
+
+   2012-07-20 11:06:02 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/security/user/check],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.admin.SecurityUserController.checkUser(java.lang.String) throws java.io.IOException
+
+   2012-07-20 11:06:02 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/security/user/{id}/edit],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.admin.SecurityUserController.edit(java.lang.String,org.springframework.ui.Model)
+
+   2012-07-20 11:06:02 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/security/user/{id}/edit],methods=[PUT],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.admin.SecurityUserController.edit(com.youboy.vs.domain.user.User,javax.servlet.http.HttpServletRequest)
+
+   2012-07-20 11:06:02 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/indexed/{name}/list],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void com.youboy.vs.interfaces.IndexedDetailsController.list(com.youboy.core.orm.Page<com.youboy.vs.domain.user.IndexedDetails>,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,org.springframework.ui.Model)
+
+   2012-07-20 11:06:02 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/indexed/index],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.IndexedDetailsController.indexed(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)
+
+   2012-07-20 11:06:02 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/init-first-day/init],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.init.InitFirstDayController.initFirstDay()
+
+   2012-07-20 11:06:02 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/ip-2-city],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.Ip2CityController.init()
+
+   2012-07-20 11:06:02 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/visitors/test],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.TestController.text(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)
+
+   2012-07-20 11:06:02 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/visitors/source],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.TestController.source(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)
+
+   2012-07-20 11:06:02 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/visitors/add-role],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.TestController.addRole()
+
+   2012-07-20 11:06:02 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/visitors/response],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.TestController.response(javax.servlet.http.HttpServletResponse) throws java.io.IOException
+
+   2012-07-20 11:06:02 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/visitors/get-data],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.List<com.youboy.vs.domain.visitors.Parameters> com.youboy.vs.interfaces.TestController.sendData(javax.servlet.http.HttpServletResponse)
+
+   2012-07-20 11:06:02 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/visitors/add-user],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.TestController.addUserTest()
+
+   2012-07-20 11:06:02 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/visitors/add-authority],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.TestController.Authority()
+
+   2012-07-20 11:06:02 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/visitors/sendRequest],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.TestController.sendRequest(javax.servlet.http.HttpServletResponse)
+
+   2012-07-20 11:06:02 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/visitdetails/add],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void com.youboy.vs.interfaces.VisitDetailsController.add(java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)
+
+   2012-07-20 11:06:02 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/visitdetails/list],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.VisitDetailsController.list(com.youboy.core.orm.Page<com.youboy.vs.domain.visitors.VisitDetails>,org.springframework.ui.Model)
+
+   2012-07-20 11:06:02 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/visitdetails/{name}/list],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void com.youboy.vs.interfaces.VisitDetailsController.list(com.youboy.core.orm.Page<com.youboy.vs.domain.visitors.VisitDetails>,java.lang.String,java.lang.String,javax.servlet.http.HttpServletResponse,org.springframework.ui.Model)
+
+   2012-07-20 11:06:02 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/visitdetails/delete],methods=[DELETE],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.VisitDetailsController.delete(javax.servlet.http.HttpServletRequest)
+
+   2012-07-20 11:06:02 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/visitdetails/{id}/delete],methods=[DELETE],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.VisitDetailsController.delete(java.lang.String)
+
+   2012-07-20 11:06:02 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/visitdetails/create],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.VisitDetailsController.create(org.springframework.ui.Model)
+
+   2012-07-20 11:06:02 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/visitdetails/create],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.VisitDetailsController.create(com.youboy.vs.domain.visitors.VisitDetails,org.springframework.validation.BindingResult)
+
+   2012-07-20 11:06:02 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/visitdetails/{id}/edit],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.VisitDetailsController.edit(java.lang.String,javax.servlet.http.HttpServletRequest)
+
+   2012-07-20 11:06:02 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/visitdetails/{id}/edit],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.youboy.vs.interfaces.VisitDetailsController.edit(java.lang.String,org.springframework.ui.Model)
+
+   2012-07-20 11:06:02 org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:190) 
+ INFO Mapped "{[/visitdetails/{name}/busines-list],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public void com.youboy.vs.interfaces.VisitDetailsController.listVisitBusinessmen(com.youboy.core.orm.Page<com.youboy.vs.domain.visitors.VisitDetails>,java.lang.String,int,java.lang.String,javax.se

@@ -1,0 +1,7 @@
+@charset "utf-8";
+/* CSS Document */
+.hframe{width:100%;height:128px;}
+.lframe{width:14%;float:left;height:628px;}
+.rframe{width:86%;float:right;height:628px;}
+.bframe{width:100%;height:44px;clear:both;}
+iframe{border:none;}
